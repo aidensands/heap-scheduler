@@ -36,6 +36,10 @@ tree.heading('Priority', text='Priority')
 tree.heading('Name', text='Task')
 tree.heading('Description', text='Description')
 
+tree.column('Priority', width=100)
+tree.column('Name', width=200)
+tree.column('Description', width=500)
+
 
 def add_button_action():
     result = schedule.add_task(task_name_box.get(),
