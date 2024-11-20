@@ -67,3 +67,6 @@ class Scheduler:
         self._idx.pop(task.name)
         self.down_heap(0)
         return f'Task Complete: {task.name} at {datetime.now()}'
+
+    def get_tasks(self):
+        return sorted(self._heap)
